@@ -1,5 +1,5 @@
 
-package FirstImplementationDraft;
+package SecondImplementationDraft;
 
 import java.util.Scanner;
 

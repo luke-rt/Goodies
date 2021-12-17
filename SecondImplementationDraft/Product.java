@@ -1,4 +1,4 @@
-package FirstImplementationDraft;
+package SecondImplementationDraft;
 
 public class Product {
     /**
