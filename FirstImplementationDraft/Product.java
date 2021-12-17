@@ -4,9 +4,9 @@ public class Product {
     /**
      * Class to represent a product type i.e. Capri Sun
      * 
-     * 11/14/21
+     * 12/14/21
      * java8
-     * @Luke and Steve
+     * @Luke T Steve X JP K
      * 
      */
     private final String name;

@@ -75,9 +75,9 @@ public class BusinessOperations {
                     System.out.println("How many would you like to purchase?");
                     int quantity = this.scanner.nextInt();
 
-                    System.out.println("Purchasing " + quantity + " units of " + this.restocker.stock.get(item).getName());
-                    System.out.println("This will add " + quantity * this.restocker.stock.get(item).getPrice() + " to your total");
-                    total += quantity * this.restocker.stock.get(item).getPrice();
+                    System.out.println("Purchasing " + quantity + " units of " + this.restocker.inventory.get(item).getName());
+                    System.out.println("This will add " + quantity * this.restocker.inventory.get(item).getPrice() + " to your total");
+                    total += quantity * this.restocker.inventory.get(item).getPrice();
                     // remove quantity from price of this.restocker.stock.get(item)
                     break;
                 case 2:        // if user responds with 2, the transaction is over --> proceed to checkout
@@ -111,8 +111,8 @@ public class BusinessOperations {
          * 
          */
         System.out.printf("%-12s%-10s%-8s%-1s\n", "Name", "Quantity", "Cost", "Sale Price");
-        for(int i = 0; i < this.restocker.stock.size(); i++) {
-            System.out.println(i + ". " + this.restocker.stock.get(i));
+        for(int i = 0; i < this.restocker.inventory.size(); i++) {
+            System.out.println(i + ". " + this.restocker.inventory.get(i));
         }
     }
 
@@ -122,8 +122,8 @@ public class BusinessOperations {
          * 
          */
         System.out.printf("%-14s%s\n", "Name", "Sale Price");
-        for(int i = 0; i < this.restocker.stock.size(); i++) {
-            System.out.printf(i + ". %-15s%f\n", this.restocker.stock.get(i).getName(), this.restocker.stock.get(i).getPrice());
+        for(int i = 0; i < this.restocker.inventory.size(); i++) {
+            System.out.printf(i + ". %-15s%f\n", this.restocker.inventory.get(i).getName(), this.restocker.inventory.get(i).getPrice());
         }
     }
 }
