@@ -2,11 +2,16 @@
 package FirstImplementationDraft;
 
 import java.util.Scanner;
-/*
-BusinessOperations.java
-handles user input and interactions with customer
-*/
+
 public class BusinessOperations {
+    /**
+     * BusinessOperations.java
+     * handles user input and interactions with customer
+     * 
+     * @Luke T Steve X JP K
+     * 12/17/21
+     * java8
+     */
     Scanner scanner;     
     Restocker restocker;
 
@@ -16,9 +21,10 @@ public class BusinessOperations {
     }
 
     public void prompt() {       
-        /*
-        * printing out how the user will interact with the program
-        */
+        /**
+         * printing out how the user will interact with the program
+         * 
+         */
         System.out.println(""" 
 
         Welcome to Goodies
@@ -90,18 +96,20 @@ public class BusinessOperations {
     }
 
     private void handleBusinessRes() {
-        /*
-        * handles manger interactions
-        */
+        /**
+         * handles manger interactions
+         * 
+         */
         printBusinessMenu();
 
     }
 
 
     private void printBusinessMenu() {   
-        /*
-        * prints formatted manager options
-        */
+        /**
+         * prints formatted manager options
+         * 
+         */
         System.out.printf("%-12s%-10s%-8s%-1s\n", "Name", "Quantity", "Cost", "Sale Price");
         for(int i = 0; i < this.restocker.stock.size(); i++) {
             System.out.println(i + ". " + this.restocker.stock.get(i));
@@ -109,13 +117,13 @@ public class BusinessOperations {
     }
 
     private void printCustomerMenu() {  
-        /*
-        * prints formatted costomer options
-        */
+        /**
+         * prints formatted costomer options
+         * 
+         */
         System.out.printf("%-14s%s\n", "Name", "Sale Price");
         for(int i = 0; i < this.restocker.stock.size(); i++) {
             System.out.printf(i + ". %-15s%f\n", this.restocker.stock.get(i).getName(), this.restocker.stock.get(i).getPrice());
         }
     }
-    
 }
