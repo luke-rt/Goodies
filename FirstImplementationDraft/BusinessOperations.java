@@ -1,6 +1,6 @@
 
 package FirstImplementationDraft;
-
+ 
 import java.util.Scanner;
 
 public class BusinessOperations {
