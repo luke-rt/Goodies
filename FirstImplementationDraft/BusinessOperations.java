@@ -1,6 +1,6 @@
 
 package FirstImplementationDraft;
- 
+
 import java.util.Scanner;
 
 public class BusinessOperations {
@@ -97,7 +97,7 @@ public class BusinessOperations {
 
     private void handleBusinessRes() {
         /**
-         * handles manger interactions
+         * handles manager interactions
          * 
          */
         printBusinessMenu();

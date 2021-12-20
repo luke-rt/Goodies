@@ -1,4 +1,4 @@
-package SecondImplementationDraft;
+package FinalImplementationDraft;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -41,8 +41,17 @@ public class Restocker {
         }
     }
 
-    public void restock(int index, int amount) {
+    public void increaseStock(int index, int amount) {
         Product product = this.inventory.get(index);
         product.increaseQuantity(amount);
+    }
+
+    public void decreaseStock(int index, int amount) {
+        Product product = this.inventory.get(index);
+        if (product.getQuantity() - amount < 0) {
+            product.decreaseQuantity(product.getQuantity()); // completely remove everything
+        } else {
+            product.decreaseQuantity(amount); // remove by amount
+        }
     }
 }
