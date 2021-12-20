@@ -97,7 +97,7 @@ public class BusinessOperations {
 
     private void handleBusinessRes() {
         /**
-         * handles manger interactions
+         * handles manager interactions
          * 
          */
         printBusinessMenu();
