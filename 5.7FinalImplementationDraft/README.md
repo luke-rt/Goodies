@@ -1,10 +1,12 @@
 PART A.
+```
 Welcome to Goodies
     1. Use as Customer
     2. Use as Business Manager
     3. Exit
-
+```
 PART B.
+```
 2
 
 What would you like to do?
@@ -12,8 +14,10 @@ What would you like to do?
     2. Decrease quantity
     3. Inventory
     4. Exit
+```
 
 PART C.
+```
 3
 Displaying Inventory...
 Name        Quantity  Cost    Sale Price
@@ -47,14 +51,14 @@ What would you like to do?
 
 4
 
-
 Welcome to Goodies
     1. Use as Customer
     2. Use as Business Manager
     3. Exit
-    
-PART D.
+```
 
+PART D.
+```
 1
 Name          Sale Price
 0. Chips          0.75
@@ -451,8 +455,10 @@ Welcome to Goodies
     1. Use as Customer
     2. Use as Business Manager
     3. Exit
+```
 
 PART F.
+```
 2
 
 What would you like to do?
@@ -460,8 +466,10 @@ What would you like to do?
     2. Decrease quantity
     3. Inventory
     4. Exit
+```
 
 PART G.
+```
 3
 Displaying Inventory...
 Name        Quantity  Cost    Sale Price
@@ -499,12 +507,15 @@ Welcome to Goodies
     1. Use as Customer
     2. Use as Business Manager
     3. Exit
+```
 
 PART H.
+```
 3
 Program shutting down...
-
+```
 PART I.
+```
 Welcome to Goodies
     1. Use as Customer
     2. Use as Business Manager
@@ -548,8 +559,9 @@ What would you like to do?
     2. Decrease quantity
     3. Inventory
     4. Exit
-    
+```
 PART J.
+```
 Welcome to Goodies
     1. Use as Customer        
     2. Use as Business Manager
@@ -557,4 +569,4 @@ Welcome to Goodies
 
 3
 Program shutting down...
-PS C:\Users\johnp\OneDrive\Documents\GitHub\Goodies> 
+```
