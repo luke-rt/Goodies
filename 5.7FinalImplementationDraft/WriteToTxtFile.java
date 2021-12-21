@@ -6,15 +6,18 @@ import java.io.PrintWriter;
  */
 public class WriteToTxtFile
 {
-    public static void main(String [] args)
+    public static void WriteToFile(String input)
     {
-        String myFile = "RawData.txt";
+        String myFile = "data.txt";
         try{
             FileWriter write = new FileWriter(myFile);
             PrintWriter print_line = new PrintWriter(write);
-            print_line.printf("%s" + "%n", "Testing write to a file");
-           
-        print_line.close();
+            print_line.println(input);
+            
+            
+            
+            print_line.close();
+            
         }
         catch (IOException e) { System.out.println("It doesn't work");
         
