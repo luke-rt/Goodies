@@ -53,5 +53,13 @@ public class Restocker {
         } else {
             product.decreaseQuantity(amount); // remove by amount
         }
+        
+        WriteTotTxtFile.WriteToFile()
     }
+    
+    private String arrayToString(){
+        String ans = "";
+        
+    }
+    
 }
