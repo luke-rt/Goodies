@@ -44,6 +44,7 @@ public class Restocker {
     public void increaseStock(int index, int amount) {
         Product product = this.inventory.get(index);
         product.increaseQuantity(amount);
+        WriteToTxtFile.WriteToFile(arrayToString());
     }
 
     public void decreaseStock(int index, int amount) {
@@ -54,12 +55,15 @@ public class Restocker {
             product.decreaseQuantity(amount); // remove by amount
         }
         
-        WriteTotTxtFile.WriteToFile()
+        WriteToTxtFile.WriteToFile(arrayToString());
     }
     
     private String arrayToString(){
         String ans = "";
-        
+        for(int i=0; i<inventory.size(); ++i){
+            ans += inventory.get(i).toStringNonFormat();
+        }
+        return ans;
     }
     
 }

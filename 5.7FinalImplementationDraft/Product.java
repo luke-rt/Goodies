@@ -31,6 +31,11 @@ public class Product {
         return String.format("%-15s%-8d%-8d%-5.2f", this.name, this.quantity, this.cost, this.price);
     }
 
+    // used instead of toString() in order to properly write to file.
+    public String toStringNonFormat() {
+        return this.name+","+this.quantity+","+this.cost+","+this.price+"\n";
+    }
+
     public String getName() {
         /**
          * Getter method for name
