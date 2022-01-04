@@ -11,7 +11,7 @@ public class WriteToTxtFile
     // WriteToFile(input: String): void, takes in string input and overwrites previous content in file
     public static void WriteToFile(String input)
     {
-        String myFile = "FinalImplementationDraft/FinalImplementationDraft/data.txt";
+        String myFile = "data.txt";
         try{
             FileWriter write = new FileWriter(myFile); 
             PrintWriter print_line = new PrintWriter(write);

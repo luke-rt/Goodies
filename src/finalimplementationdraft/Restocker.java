@@ -31,12 +31,13 @@ public class Restocker {
             Scanner scanner = new Scanner(file);
 
             while (scanner.hasNextLine()) {
-                String[] line = scanner.nextLine().split("\\,");
+                String[] line = scanner.nextLine().split(",");
 
                 this.inventory.add(new Product(line[0], line[1], line[2], line[3]));
             }
             scanner.close();
         } catch (FileNotFoundException e) {
+            System.out.println("File not found...");
             e.printStackTrace();
         }
     }
@@ -69,6 +70,7 @@ public class Restocker {
         for (int i = 0; i < inventory.size(); ++i) {
             ans += inventory.get(i).toStringNonFormat();
         }
+        ans = ans.trim();
         return ans;
     }
 

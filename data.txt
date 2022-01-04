@@ -1,5 +1,5 @@
 Chips,45,25,0.75
-Pop corn,45,22,0.75
+Pop corn,44,22,0.75
 Pop Corners,45,22,0.75
 Cheeze it,45,18,0.75
 Gold Fish,45,18,0.75
@@ -19,4 +19,3 @@ Ice cream,45,20,1.0
 Klondike Bars,45,15,1.25
 Italian Ice,45,10,1.25
 Ice pop,45,16,0.25
-
