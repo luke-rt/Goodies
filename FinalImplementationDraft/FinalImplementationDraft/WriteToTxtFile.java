@@ -1,3 +1,5 @@
+package FinalImplementationDraft;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -8,7 +10,7 @@ public class WriteToTxtFile
 {
     public static void WriteToFile(String input)
     {
-        String myFile = "data.txt";
+        String myFile = "FinalImplementationDraft/FinalImplementationDraft/data.txt";
         try{
             FileWriter write = new FileWriter(myFile);
             PrintWriter print_line = new PrintWriter(write);

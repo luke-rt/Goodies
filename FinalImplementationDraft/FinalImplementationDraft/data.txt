@@ -1,0 +1,22 @@
+Chips,25,25,0.75
+Pop corn,45,22,0.75
+Pop Corners,45,22,0.75
+Cheeze it,45,18,0.75
+Gold Fish,45,18,0.75
+Oreo Cookies,45,30,0.75
+Fruit Snack,45,15,0.25
+Trail Mix,45,22,0.5
+Nutrigrain,45,31,0.5
+Peanut Bar,45,16,0.5
+Coke,45,18,1.25
+Sprite,45,17,1.25
+Sunkist,45,16,1.25
+Brisk,45,17,1.25
+Ginger Ale,45,21,1.25
+Water,45,22,1.0
+Capri Sun,45,15,0.75
+Ice cream,45,20,1.0
+Klondike Bars,45,15,1.25
+Italian Ice,45,10,1.25
+Ice pop,45,16,0.25
+

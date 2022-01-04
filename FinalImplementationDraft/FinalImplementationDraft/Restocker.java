@@ -54,16 +54,16 @@ public class Restocker {
         } else {
             product.decreaseQuantity(amount); // remove by amount
         }
-        
+
         WriteToTxtFile.WriteToFile(arrayToString());
     }
-    
-    private String arrayToString(){
+
+    private String arrayToString() {
         String ans = "";
-        for(int i=0; i<inventory.size(); ++i){
+        for (int i = 0; i < inventory.size(); ++i) {
             ans += inventory.get(i).toStringNonFormat();
         }
         return ans;
     }
-    
+
 }
