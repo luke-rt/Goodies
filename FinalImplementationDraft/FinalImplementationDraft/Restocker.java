@@ -41,12 +41,16 @@ public class Restocker {
         }
     }
 
+    // increaseStock(index: int, amount:int) : void, will increase certain index in
+    // "inventory" array by "amount"-amount. Then writes to original data file
     public void increaseStock(int index, int amount) {
         Product product = this.inventory.get(index);
         product.increaseQuantity(amount);
         WriteToTxtFile.WriteToFile(arrayToString());
     }
 
+    // decreaseStock(index: int, amount:int) : void, will decrease certain index in
+    // "inventory" array by "amount"-amount. Then writes to original data file
     public void decreaseStock(int index, int amount) {
         Product product = this.inventory.get(index);
         if (product.getQuantity() - amount < 0) {
@@ -58,6 +62,8 @@ public class Restocker {
         WriteToTxtFile.WriteToFile(arrayToString());
     }
 
+    // arrayToString(): String, converts inventory into a string that can be written
+    // to file
     private String arrayToString() {
         String ans = "";
         for (int i = 0; i < inventory.size(); ++i) {
