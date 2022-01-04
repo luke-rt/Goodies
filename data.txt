@@ -1,5 +1,5 @@
 Chips,45,25,0.75
-Pop corn,44,22,0.75
+Pop corn,45,22,0.75
 Pop Corners,45,22,0.75
 Cheeze it,45,18,0.75
 Gold Fish,45,18,0.75
