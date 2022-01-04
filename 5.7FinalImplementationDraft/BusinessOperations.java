@@ -24,13 +24,11 @@ public class BusinessOperations {
          * printing out how the user will interact with the program
          * 
          */
-        System.out.println("""
-
-                Welcome to Goodies
-                    1. Use as Customer
-                    2. Use as Business Manager
-                    3. Exit
-                """);
+        System.out.println("Welcome to Goodies"
+                    + "\n\t1. Use as Customer"
+                    + "\n\t2. Use as Business Manager"
+                    + "\n\t3. Exit"
+                );
 
         int option = this.scanner.nextInt(); // saving user response as int option
 
@@ -60,13 +58,11 @@ public class BusinessOperations {
         double total = 0; // total cost of transaction
         while (cont) {
             printCustomerMenu();
-            System.out.println("""
-
-                    What would you like to do?
-                        1. Purchase
-                        2. Proceed to checkout
-                        3. Exit
-                    """);
+            System.out.println("What would you like to do?"
+                        + "\n\t1. Purchase"
+                        + "\n\t2. Proceed to checkout"
+                        + "\n\t3. Exit"
+                    );
 
             int res = this.scanner.nextInt();
             switch (res) { // if user responds with 1, go through steps of buying an item, and then get
@@ -109,14 +105,12 @@ public class BusinessOperations {
          */
         boolean cont = true;
         while (cont) {
-            System.out.println("""
-
-                    What would you like to do?
-                        1. Increase quantity
-                        2. Decrease quantity
-                        3. Inventory
-                        4. Exit
-                    """);
+            System.out.println("What would you like to do?"
+                        + "\n\t1. Increase quantity"
+                        + "\n\t2. Decrease quantity"
+                        + "\n\t3. Inventory"
+                        + "\n\t4. Exit"
+                    );
 
             int res = this.scanner.nextInt();
             int item, quantity;
