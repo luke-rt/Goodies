@@ -1,4 +1,4 @@
-package FinalImplementationDraft;
+package finalimplementationdraft;
 
 import java.io.FileWriter;
 import java.io.IOException;

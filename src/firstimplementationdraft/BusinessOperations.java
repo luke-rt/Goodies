@@ -1,5 +1,4 @@
-
-package FirstImplementationDraft;
+package firstimplementationdraft;
 
 import java.util.Scanner;
 

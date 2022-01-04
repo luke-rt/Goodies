@@ -1,4 +1,4 @@
-package FinalImplementationDraft;
+package secondimplementationdraft;
 
 import java.util.Scanner;
 
@@ -24,11 +24,13 @@ public class BusinessOperations {
          * printing out how the user will interact with the program
          * 
          */
-        System.out.println("Welcome to Goodies"
-                    + "\n\t1. Use as Customer"
-                    + "\n\t2. Use as Business Manager"
-                    + "\n\t3. Exit"
-                );
+        System.out.println("""
+
+                Welcome to Goodies
+                    1. Use as Customer
+                    2. Use as Business Manager
+                    3. Exit
+                """);
 
         int option = this.scanner.nextInt(); // saving user response as int option
 
@@ -41,7 +43,6 @@ public class BusinessOperations {
                 handleBusinessRes();
                 break;
             case 3:
-                System.out.println("Program shutting down...");
                 System.exit(0); // if the response == 3 then exit the program
             default:
                 System.out.println("Invalid response"); // handling if user doesnt respond with 1, 2, or 3
@@ -55,14 +56,16 @@ public class BusinessOperations {
          *
          */
         boolean cont = true;
-        double total = 0; // total cost of transaction
+        int total = 0; // total cost of transaction
         while (cont) {
             printCustomerMenu();
-            System.out.println("What would you like to do?"
-                        + "\n\t1. Purchase"
-                        + "\n\t2. Proceed to checkout"
-                        + "\n\t3. Exit"
-                    );
+            System.out.println("""
+
+                    What would you like to do?
+                        1. Purchase
+                        2. Proceed to checkout
+                        3. Exit
+                    """);
 
             int res = this.scanner.nextInt();
             switch (res) { // if user responds with 1, go through steps of buying an item, and then get
@@ -77,20 +80,17 @@ public class BusinessOperations {
                             "Purchasing " + quantity + " units of " + this.restocker.inventory.get(item).getName());
                     System.out.println("This will add " + quantity * this.restocker.inventory.get(item).getPrice()
                             + " to your total");
-
                     total += quantity * this.restocker.inventory.get(item).getPrice();
-                    // remove quantity from price of
-                    this.restocker.decreaseStock(item, quantity);
+                    // remove quantity from price of this.restocker.stock.get(item)
                     break;
                 case 2: // if user responds with 2, the transaction is over --> proceed to checkout
                     System.out.println("Proceeding to checkout");
                     System.out.println("Your total is $" + total);
 
-                    prompt();
+                    cont = false;
                     break;
-                case 3: // if user responds with 3 then return to main menu
-                    prompt();
-                    break;
+                case 3: // if user responds with 3 then exit
+                    System.exit(0);
                 default:
                     System.out.println("Invalid response");
                     break;
@@ -105,47 +105,32 @@ public class BusinessOperations {
          */
         boolean cont = true;
         while (cont) {
-            System.out.println("What would you like to do?"
-                + "\n\t1. Increase quantity"
-                + "\n\t2. Decrease quantity"
-                + "\n\t3. Inventory"
-                + "\n\t4. Exit"
-                );
+            printBusinessMenu();
+            System.out.println("""
+
+                    What would you like to do?
+                        1. Increase quantity
+                        2. Decrease quantity
+
+                        3. Exit
+                    """);
 
             int res = this.scanner.nextInt();
-            int item, quantity;
             switch (res) {
                 case 1:
                     System.out.println(
                             "What item do you want to increase the quantity of? Type the index number of your item: ");
-                    item = this.scanner.nextInt();
+                    int item = this.scanner.nextInt();
                     System.out.println(
                             "How much do you want to increase the quantity by? Type the index number of your item: ");
-                    quantity = this.scanner.nextInt();
+                    int quantity = this.scanner.nextInt();
 
-                    System.out.println("Adding " + quantity + "units of " + this.restocker.inventory.get(item).getName()
-                            + "to the inventory");
-                    this.restocker.increaseStock(item, quantity); // increase stock of product by amount "quantity"
+                    System.out.println("Adding " + quantity + "units of " + item + "to the inventory");
                     break;
                 case 2:
-                    System.out.println(
-                            "What item do you want to decrease the quantity of? Type the index number of your item: ");
-                    item = this.scanner.nextInt();
-                    System.out.println(
-                            "How much do you want to decrease the quantity by? Type the index number of your item: ");
-                    quantity = this.scanner.nextInt();
 
-                    System.out.println("Removing: " + quantity + "units of "
-                            + this.restocker.inventory.get(item).getName() + "to the inventory");
-                    this.restocker.decreaseStock(item, quantity); // decrease stock of product by amount "quantity"
-                    break;
-                case 3: // if user responds with 3 then display inventory
-                    System.out.println("Displaying Inventory...");
-                    printBusinessMenu();
-                    break;
-                case 4: // if user responds with 4 then exit
-                    prompt();
-                    break;
+                case 3: // if user responds with 3 then exit
+                    System.exit(0);
                 default:
                     System.out.println("Invalid response");
                     break;

@@ -1,4 +1,4 @@
-package FinalImplementationDraft;
+package finalimplementationdraft;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -25,7 +25,7 @@ public class Restocker {
          */
         this.inventory = new ArrayList<Product>();
 
-        File file = new File("./FirstImplementationDraft/" + filename);
+        File file = new File(filename);
 
         try {
             Scanner scanner = new Scanner(file);

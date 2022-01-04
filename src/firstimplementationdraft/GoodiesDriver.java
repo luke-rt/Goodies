@@ -1,4 +1,4 @@
-package FirstImplementationDraft;
+package firstimplementationdraft;
 
 public class GoodiesDriver {
     public static void main(String[] args) {

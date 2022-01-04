@@ -1,4 +1,4 @@
-package FirstImplementationDraft;
+package finalimplementationdraft;
 
 public class Product {
     /**
@@ -6,6 +6,7 @@ public class Product {
      * 
      * 12/14/21
      * java8
+     * 
      * @Luke T Steve X JP K
      * 
      */
@@ -28,6 +29,11 @@ public class Product {
 
     public String toString() {
         return String.format("%-15s%-8d%-8d%-5.2f", this.name, this.quantity, this.cost, this.price);
+    }
+
+    // used instead of toString() in order to properly write to file.
+    public String toStringNonFormat() {
+        return this.name+","+this.quantity+","+this.cost+","+this.price+"\n";
     }
 
     public String getName() {

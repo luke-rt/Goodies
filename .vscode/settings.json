@@ -1,6 +1,5 @@
 {
     "java.project.sourcePaths": [
-        "5.7FinalImplementationDraft",
-        "FinalImplementationDraft"
+        "src"
     ]
 }
