@@ -1,16 +1,16 @@
-Chips,40,25,0.75
+Chips,45,25,0.75
 Pop corn,45,22,0.75
-Pop Corners,39,22,0.75
+Pop Corners,45,22,0.75
 Cheeze it,45,18,0.75
 Gold Fish,45,18,0.75
 Oreo Cookies,45,30,0.75
 Fruit Snack,45,15,0.25
-Trail Mix,41,22,0.5
+Trail Mix,45,22,0.5
 Nutrigrain,45,31,0.5
 Peanut Bar,45,16,0.5
 Coke,45,18,1.25
 Sprite,45,17,1.25
-Sunkist,45,16,1.25
+Sunkist,43,16,1.25
 Brisk,45,17,1.25
 Ginger Ale,45,21,1.25
 Water,45,22,1.0

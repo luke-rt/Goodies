@@ -135,8 +135,8 @@ public class BusinessOperations {
                             "How much do you want to decrease the quantity by? Type the index number of your item: ");
                     quantity = this.scanner.nextInt();
 
-                    System.out.println("Removing: " + quantity + "units of "
-                            + this.restocker.inventory.get(item).getName() + "to the inventory");
+                    System.out.println("Removing: " + quantity + " units of "
+                            + this.restocker.inventory.get(item).getName() + " to the inventory");
                     this.restocker.decreaseStock(item, quantity); // decrease stock of product by amount "quantity"
                     break;
                 case 3: // if user responds with 3 then display inventory
