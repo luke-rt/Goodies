@@ -1,13 +1,23 @@
+a.
+```
 Welcome to Goodies        
         1. Use as Customer
         2. Use as Business Manager
         3. Exit
+```  
+        
+b.
+```
 2
 What would you like to do?
         1. Increase quantity
         2. Decrease quantity
         3. Inventory
         4. Exit
+```
+        
+c.
+```
 3
 Displaying Inventory...
 Name        Quantity  Cost    Sale Price
@@ -37,6 +47,10 @@ What would you like to do?
         2. Decrease quantity
         3. Inventory
         4. Exit
+```
+
+d.
+```
 4
 Welcome to Goodies
         1. Use as Customer
@@ -70,6 +84,10 @@ What would you like to do?
         2. Proceed to checkout
         3. Exit
 1
+```
+
+e.    
+```
 What would you like to buy? Type the index number of your item:
 2
 How many would you like to purchase?
@@ -110,11 +128,19 @@ Welcome to Goodies
         2. Use as Business Manager
         3. Exit
 2
+```
+
+f.
+```
 What would you like to do?
         1. Increase quantity
         2. Decrease quantity
         3. Inventory
         4. Exit
+```
+
+g.
+```
 3
 Displaying Inventory...
 Name        Quantity  Cost    Sale Price
@@ -149,10 +175,17 @@ Welcome to Goodies
         1. Use as Customer
         2. Use as Business Manager
         3. Exit
+```
+
+h.
+```
 3
 Program shutting down...
+```
 
 =========== 
+i.
+```
 Run 2:
 Welcome to Goodies
         1. Use as Customer        
@@ -198,5 +231,10 @@ Welcome to Goodies
         1. Use as Customer
         2. Use as Business Manager
         3. Exit
+```        
+
+j.
+```
 3
 Program shutting down...
+```
